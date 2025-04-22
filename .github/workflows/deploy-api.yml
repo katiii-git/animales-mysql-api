@@ -1,4 +1,4 @@
-name: Deploy mysql-api
+name: Deploy animales-mysql-api
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
 #      - run: npm install -g sequelize-cli@6.2.0 
 
 #      - run: sequelize db:migrate
-      - run: docker build -t katiamp/mysql-restapi:${{github.sha}} .
+      - run: docker build -t katiamp/animales-mysql-restapi:${{github.sha}} .
       - run: docker images
  #     - run: docker run --name api -p 8080:8080 -d adsoft/mysql-restapi:${{github.sha}} 
  #     - run: docker ps
